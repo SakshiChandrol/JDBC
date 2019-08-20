@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <style>
+            h2
+                {
+                  float: left;
+                }
+                h4
+                {
+                  float: right;
+                }
+                .top-buffer
+                {
+                  margin-top: 40px;
+                }
+                </style>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+ <div class="row">
+     
+     <div class="col-xs-6">
+      <h2> Welcome Admin</h2>
+     </div>
+     <div class="col-xs-6">
+         
+      <h4> <button type="button"><a href="${pageContext.request.contextPath}/index"> Logout</a></button> </h4> 
+     </div>
+     
+ </div>
+ <div class="row top-buffer">
+     <div class="col-sm-3">
+        <button type="button"><a href="${pageContext.request.contextPath}/importdata">Import Data</a>  </button>
+     </div>
+     <div class="col-sm-3">
+        <button type="button"><a href="${pageContext.request.contextPath}/managecompany">Manage Company </a></button>
+     </div>
+     <div class="col-sm-3">
+        <button type="button"><a href="${pageContext.request.contextPath}/manageexchange">Manage Exchange</a></button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button"><a href="${pageContext.request.contextPath}/updateipodetails">Update IPO Details</a></button>
+      </div>
+ </div>
+
+ <div class="row">
+     <div class="col-sm-12">
+         <h3>
+             Import Excel
+         </h3>
+     </div>
+     <div class="row">
+     <div class="col-sm-12">
+         <h5>
+             Select Excel File to be uploaded   </h5>
+             </div>
+             <div class="row">
+             <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                </div>
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="inputGroupFile01"
+                    aria-describedby="inputGroupFileAddon01">
+                  <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                </div>
+              </div>
+        
+     </div>
+    </div>
+ </div>
+    
+</div>
+
+</body>
+</html>
